@@ -1,0 +1,130 @@
+/* Body and general layout */
+body {
+    background: #6a0dad; /* Purple background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for all content */
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 480px;
+}
+
+/* Main heading */
+.main-heading {
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #4b0082;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* Candidates layout */
+.candidates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Each candidate card */
+.candidate-card {
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 180px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .candidate-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Candidate name */
+    .candidate-card h2 {
+        margin-bottom: 10px;
+        color: #333333;
+    }
+
+    /* Vote buttons */
+    .candidate-card button {
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+        .candidate-card button:hover {
+            background: #45a049;
+        }
+
+/* Vote bars */
+.vote-bar {
+    background: #ddd;
+    width: 100%;
+    height: 15px;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.fill {
+    background: #4CAF50;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s;
+}
+
+/* Vote count text */
+.candidate-card span {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* Run Votes button */
+.results-btn {
+    margin-top: 15px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .results-btn:hover {
+        background: #0b7dda;
+    }
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .candidate-card {
+        width: 100%;
+    }
+}

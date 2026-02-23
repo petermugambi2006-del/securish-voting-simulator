@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-heading">Voting Simulator</h1>
+
+        <div class="candidates">
+            <div class="candidate-card" id="Alice-card">
+                <h2>Alice</h2>
+                <button onclick="vote('Alice')">Vote</button>
+                <div class="vote-bar"><div class="fill" id="Alice-fill"></div></div>
+                <span id="Alice-count">0 votes</span>
+            </div>
+
+            <div class="candidate-card" id="Brian-card">
+                <h2>Brian</h2>
+                <button onclick="vote('Brian')">Vote</button>
+                <div class="vote-bar"><div class="fill" id="Brian-fill"></div></div>
+                <span id="Brian-count">0 votes</span>
+            </div>
+
+            <div class="candidate-card" id="Carol-card">
+                <h2>Carol</h2>
+                <button onclick="vote('Carol')">Vote</button>
+                <div class="vote-bar"><div class="fill" id="Carol-fill"></div></div>
+                <span id="Carol-count">0 votes</span>
+            </div>
+
+            <div class="candidate-card" id="David-card">
+                <h2>David</h2>
+                <button onclick="vote('David')">Vote</button>
+                <div class="vote-bar"><div class="fill" id="David-fill"></div></div>
+                <span id="David-count">0 votes</span>
+            </div>
+        </div>
+
+        <button class="results-btn" onclick="declareWinner()">Run Votes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
